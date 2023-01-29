@@ -14,13 +14,25 @@ public class Stack {
 		return stack.removeFirst();
 	}
 	
+	public int peek() {
+		return (int) stack.getFirst();
+	}
+
+	public boolean isEmpty() {
+        return stack.isEmpty();
+    }
+	
 	public static void main(String[] args) {
+		
 		Stack stack = new Stack();
 		stack.push(70);
 		stack.push(30);
 		stack.push(56);
-		System.out.println(stack.pop()); 
-		System.out.println(stack.pop()); 
-		System.out.println(stack.pop());
+		stack.pop();
+		System.out.println(stack.peek());
+		stack.pop();
+		System.out.println(stack.peek());
+		stack.pop();
+		System.out.println(stack.isEmpty());
 	}
 }
