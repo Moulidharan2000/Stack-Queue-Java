@@ -1,5 +1,5 @@
 *.settings/
- target/
- .calsspath
- .project
- pom.xml
+  target/
+  .calsspath
+  .project
+  pom.xml

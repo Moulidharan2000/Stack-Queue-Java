@@ -14,8 +14,16 @@ public class Queue {
         queue.addLast(value);
     }
     
+    public int dequeue() {
+        return queue.removeFirst();
+    }
+    
     public int peek() {
         return queue.getFirst();
+    }
+    
+    public boolean isEmpty() {
+        return queue.isEmpty();
     }
     
     public static void main(String[] args) {
@@ -24,6 +32,6 @@ public class Queue {
         queue.enqueue(56);
         queue.enqueue(30);
         queue.enqueue(70);
-        System.out.println(queue.peek());
+        System.out.println(queue.dequeue());
     }
 }
